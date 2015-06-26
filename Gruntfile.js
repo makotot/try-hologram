@@ -51,7 +51,8 @@ module.exports = function (grunt) {
             expand: true,
             cwd: '<%= path.src %>/scss',
             src: '*.scss',
-            dest: '<%= path.env %>/css'
+            dest: '<%= path.env %>/css',
+            ext: '.css'
           }
         ]
       }
@@ -66,7 +67,7 @@ module.exports = function (grunt) {
         tasks: ['assemble']
       },
       css: {
-        files: ['<%= path.src %>/scss/**/*.css'],
+        files: ['<%= path.src %>/scss/**/*.scss'],
         tasks: ['sass']
       }
     },
