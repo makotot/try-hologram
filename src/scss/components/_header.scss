@@ -1,4 +1,22 @@
 @charset "utf-8";
 
+/*doc
+---
+title: Header
+name: header
+category: Basics
+---
+
+```html_example
+<header class="header">
+</header>
+```
+
+Header Element.
+
+*/
+
 .header {
+  background-color: #e4e4e4;
 }
+
